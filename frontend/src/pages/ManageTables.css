@@ -1,0 +1,152 @@
+.manage-tables-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.manage-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.manage-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.restaurant-selector-box {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  max-width: 400px;
+}
+
+/* Form Card */
+.form-card {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  width: 100%;
+}
+
+.form-card-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.form-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: var(--text-primary);
+}
+
+.table-crud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.table-crud-form button {
+  align-self: flex-start;
+  padding: 10px 24px;
+}
+
+/* Tables Grid */
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.table-admin-card {
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all var(--transition-fast);
+  border-top: 4px solid var(--accent-color);
+}
+
+.table-admin-card.maintenance {
+  border-top-color: var(--error);
+  opacity: 0.85;
+}
+
+.table-icon {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.status-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.status-pill.available {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-pill.maintenance {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.card-center h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card-center p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.card-actions {
+  gap: 8px;
+}
+
+.card-actions button {
+  flex: 1;
+}
+
+/* Empty State */
+.empty-state {
+  flex-direction: column;
+  padding: 50px 30px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  gap: 16px;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  color: var(--text-muted);
+}
+
+.empty-state h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 320px;
+  margin-bottom: 8px;
+}

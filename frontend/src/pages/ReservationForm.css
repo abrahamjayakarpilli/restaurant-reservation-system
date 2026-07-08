@@ -1,0 +1,129 @@
+.reservation-form-page {
+  padding: 60px 24px 80px;
+}
+
+.form-layout-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+}
+
+.form-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 20px;
+}
+
+.form-header .back-link {
+  color: var(--text-muted);
+  display: inline-flex;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  transition: color var(--transition-fast);
+}
+.form-header .back-link:hover {
+  color: var(--accent-color);
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.form-header p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.form-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-submit-booking {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.05rem;
+  margin-top: 16px;
+}
+
+/* Success Card */
+.booking-success-container {
+  min-height: calc(100vh - 180px);
+  padding: 60px 24px;
+}
+
+.success-card {
+  flex-direction: column;
+  padding: 50px 40px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  gap: 16px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.success-card h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+.success-intro {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.booking-summary-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 16px 24px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-summary-box p {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.qr-wrapper {
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.qr-img {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--radius-md);
+  border: 3px solid var(--accent-color);
+  background-color: white;
+  padding: 6px;
+}
+
+.qr-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.success-actions {
+  margin-top: 16px;
+  width: 100%;
+  justify-content: center;
+}

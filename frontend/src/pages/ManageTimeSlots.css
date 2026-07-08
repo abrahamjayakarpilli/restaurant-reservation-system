@@ -1,0 +1,148 @@
+.manage-slots-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.manage-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.manage-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.restaurant-selector-box {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  max-width: 400px;
+}
+
+/* Forms Card */
+.form-card {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  width: 100%;
+}
+
+.form-card-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.form-card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: var(--text-primary);
+}
+
+.slot-crud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.slot-crud-form button {
+  align-self: flex-start;
+  padding: 10px 24px;
+}
+
+/* Slots Table Panel */
+.slots-panel-list {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+}
+
+.slots-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.slots-table th,
+.slots-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.95rem;
+}
+
+.slots-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.disabled-row {
+  opacity: 0.6;
+}
+
+.toggle-status-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.toggle-icon {
+  font-size: 1.6rem;
+}
+
+.success-color {
+  color: var(--success);
+}
+
+.danger-color {
+  color: var(--error);
+}
+
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.btn-delete:hover {
+  color: var(--error);
+}
+
+/* Empty State */
+.empty-state {
+  flex-direction: column;
+  padding: 50px 30px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  gap: 16px;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  color: var(--text-muted);
+}
+
+.empty-state h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 320px;
+  margin-bottom: 8px;
+}

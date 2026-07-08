@@ -1,0 +1,174 @@
+.manage-bookings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.manage-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.manage-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Filter Toolbar */
+.filter-toolbar {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+}
+
+.toolbar-filters-grid {
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  min-width: 160px;
+  flex: 1;
+}
+
+.clear-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.clear-btn:hover {
+  text-decoration: underline;
+}
+
+/* Bookings Admin List */
+.admin-bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-admin-card {
+  display: flex;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card-left-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-badge-admin {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.status-badge-admin.approved {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-badge-admin.pending {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.status-badge-admin.cancelled,
+.status-badge-admin.rejected {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.card-left-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.meta-schedule-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.meta-schedule-grid p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.customer-contact-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.customer-contact-box p {
+  align-items: center;
+}
+
+.requests-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-left: 2px solid var(--accent-color);
+  padding-left: 8px;
+}
+
+.mt-1 { margin-top: 4px; }
+
+.card-right-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.closed-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+/* Empty State */
+.empty-state {
+  flex-direction: column;
+  padding: 50px 30px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  gap: 16px;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  color: var(--text-muted);
+}
+
+.empty-state h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 320px;
+}

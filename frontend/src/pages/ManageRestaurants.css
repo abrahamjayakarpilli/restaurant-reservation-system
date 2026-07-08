@@ -1,0 +1,157 @@
+.manage-restaurants-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.manage-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.manage-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Forms Card */
+.form-card {
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  width: 100%;
+}
+
+.form-card-header {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.form-card-header h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: var(--text-primary);
+}
+
+.restaurant-crud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.restaurant-crud-form button {
+  align-self: flex-start;
+  padding: 12px 30px;
+}
+
+/* Restaurant Admin Card */
+.restaurant-admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.restaurant-admin-card {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cuisine-badge {
+  display: inline-block;
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.res-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-icon {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.btn-icon.edit { color: var(--accent-color); }
+.btn-icon.edit:hover { color: var(--accent-hover); }
+.btn-icon.delete { color: var(--error); }
+.btn-icon.delete:hover { color: #dc2626; }
+
+.res-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 16px;
+}
+
+/* Photo Gallery Admin */
+.photos-admin-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.photos-admin-panel h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.photos-preview-strip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.res-strip-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.photos-upload-form {
+  gap: 14px;
+  align-items: center;
+}
+
+.photo-submit-strip {
+  align-items: center;
+}
+
+.photo-submit-strip .count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

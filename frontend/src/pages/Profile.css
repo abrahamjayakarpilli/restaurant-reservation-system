@@ -1,0 +1,153 @@
+.profile-page {
+  padding: 40px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-header h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.profile-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.profile-grid-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Left Card */
+.summary-card {
+  padding: 40px 30px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 3px solid var(--accent-color);
+  background-color: var(--bg-tertiary);
+  margin-bottom: 8px;
+}
+
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  color: var(--text-muted);
+}
+
+.summary-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.user-role-badge {
+  display: inline-block;
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+}
+
+.user-email-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.avatar-upload-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.select-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.file-submit-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.selected-filename {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+/* Right Cards */
+.forms-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.settings-card {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+}
+
+.section-subtitle {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-form button {
+  align-self: flex-start;
+  padding: 12px 28px;
+}
+
+@media (max-width: 768px) {
+  .profile-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

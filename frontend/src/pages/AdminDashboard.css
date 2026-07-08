@@ -1,0 +1,205 @@
+.admin-dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dashboard-title-bar h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.dashboard-title-bar p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Grid Stats */
+.dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  gap: 20px;
+}
+
+.icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  font-size: 1.5rem;
+}
+
+.icon-wrapper.info {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--info);
+}
+
+.icon-wrapper.warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.icon-wrapper.success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.icon-wrapper.gold {
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--accent-color);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.65rem;
+  font-weight: 800;
+}
+
+/* Details Layout */
+.dashboard-details-layout {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.details-panel {
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  min-width: 300px;
+}
+
+.flex-grow {
+  flex-grow: 2;
+}
+
+.panel-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.no-data-msg {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.slots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slot-row {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 10px;
+  font-size: 0.95rem;
+}
+.slot-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.slot-count.badge {
+  background-color: rgba(212, 175, 55, 0.1);
+  color: var(--accent-color);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+/* Recent Bookings Table */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.recent-bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.recent-bookings-table th,
+.recent-bookings-table td {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.recent-bookings-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.cust-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cust-info .name {
+  font-weight: 600;
+}
+
+.cust-info .phone {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.status-badge-inline {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.status-badge-inline.approved {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-badge-inline.pending {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.status-badge-inline.cancelled,
+.status-badge-inline.rejected {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.gap-1 {
+  gap: 4px;
+}
+@media (max-width: 992px) {
+  .dashboard-details-layout {
+    flex-direction: column;
+  }
+}
